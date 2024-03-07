@@ -1,4 +1,4 @@
-# Filhåndtering, undtagelseshåndtering og Virtuel Environment
+# Filhåndtering, undtagelseshåndtering og Virtual Environment
 
 ## Indledende overvejelser
 
