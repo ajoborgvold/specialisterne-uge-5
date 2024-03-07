@@ -50,4 +50,3 @@ En potentielt stor brist i min kode er, at jeg arbejder med prædefinerede `patt
 ## NB
 
 I `validation.py` får jeg en fejlmeddelelse på mine `imports`: `Import "email_validator"/"phonenumbers" could not be resolved`. Koden virker imidlertid, og pakkerne er installeret korrekt i `opg-2-venv`. Jeg har ikke kunnnet spore årsagen til fejlmeddelelserne.
-# specialisterne-uge-5
