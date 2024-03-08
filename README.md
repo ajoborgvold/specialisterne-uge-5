@@ -6,8 +6,8 @@ Jeg har lært en pokkers masse denne uge og arbejdet med en masse ting, som jeg 
 
 ## Sådan køres koden
 
-1. Naviger til det ønskede `directory`, enten `opg-1` eller `opg-2`
-2. Aktiver det relevante `venv`, enten `opg-1-venv` eller `opg-2-venv`
+1. Naviger til det ønskede `directory`, enten `opg-1` eller `opg-2`.
+2. Skab et venv og aktiver det.
 3. Installer `requirements.txt`
 
 ## Overvejelser om kodens robusthed
@@ -18,6 +18,7 @@ En potentielt stor brist i min kode er, at jeg i datavalideringen i opgave 2 arb
 ## NB
 
 I `validation.py` får jeg en fejlmeddelelse på mine `imports`: `Import "email_validator"/"phonenumbers" could not be resolved`. Koden virker imidlertid, og når jeg tjekker, hvilke pakker der er installerede, får jeg dette resultat:
+
 ```
 (opg-2-venv) ajo@Ajos-mac opg-2 % pip3 list
 Package         Version
@@ -29,4 +30,5 @@ phonenumbers    8.13.31
 pip             24.0
 setuptools      58.1.0
 ```
+
 Det lader altså til, at pakkerne faktisk er installeret i Virtual Environment. Jeg har ikke kunnnet spore årsagen til fejlmeddelelserne.
