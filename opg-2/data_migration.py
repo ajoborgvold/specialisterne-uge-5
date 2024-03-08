@@ -21,8 +21,8 @@ def validate_data(file_path):
                     row_number += 1
                     continue
                 
-                row_index = row_number
-                validate_row(row, row_index, validation_functions, patterns)
+                row_id = row.get("row_id", row_number)
+                validate_row(row, row_id, validation_functions, patterns)
                 row_number += 1
     except Exception as e:
         print(f"An error occured while processing the file: {str(e)}")
@@ -30,7 +30,7 @@ def validate_data(file_path):
         print()
         print("Finished validating all fields in all rows.")
 
-def validate_row(row, row_index, validation_functions, patterns):
+def validate_row(row, row_id, validation_functions, patterns):
     """
     Validate all fields in each row:
         1. Use the field names fetched from the data heading to look up and call the appropriate validation functions, passing the corresponding validation patterns.
@@ -38,15 +38,17 @@ def validate_row(row, row_index, validation_functions, patterns):
     """
     
     for field_name, field_value in row.items():
+        if field_name == "row_id":
+            continue
         validation_function = validation_functions.get(field_name)
         if validation_function:
             pattern = patterns.get(field_name)
             if pattern:
-                validation_function(field_value, row_index, pattern)
+                validation_function(field_value, row_id, pattern)
             else:
-                validation_function(field_value, row_index)
+                validation_function(field_value, row_id)
         else:
-            print(f"No appropriate validation function was found. No validation will be performed for the data entry: {field_name}: {field_value}, in row {row_index}")
+            print(f"No appropriate validation function was found. No validation will be performed for the data entry: {field_name}: {field_value}, in row {row_id}")
 
 def check_file_permissions(file_path):
     """
@@ -87,4 +89,4 @@ def check_file_permissions(file_path):
     except FileNotFoundError as e:
         print(str(e))
 
-check_file_permissions("test_data_2.csv")
+check_file_permissions("test_data_1.csv")

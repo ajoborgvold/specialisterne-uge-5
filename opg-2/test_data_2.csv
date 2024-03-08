@@ -1,5 +1,5 @@
 row_id,customer_id,name,email,purchase_amount
-abDE,2001,Adam White,adam.white@example.com,180.25
+abcDE,2001,Adam White,adam.white@example.com,180.25
 fGhIj,2002,Eva Martinez,eva.martinez@example.com,410.75
 KlmNO,2003,Liam Garcia,liam.garcia@example.com,300.50
 PqRSt,2004,Olivia Rodriguez,olivia.rodriguez@example.com,250.0
