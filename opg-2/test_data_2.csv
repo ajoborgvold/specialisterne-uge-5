@@ -1,0 +1,16 @@
+row_id,customer_id,name,email,purchase_amount
+abDE,2001,Adam White,adam.white@example.com,180.25
+fGhIj,2002,Eva Martinez,eva.martinez@example.com,410.75
+KlmNO,2003,Liam Garcia,liam.garcia@example.com,300.50
+PqRSt,2004,Olivia Rodriguez,olivia.rodriguez@example.com,250.0
+UVWxY,2005,Noah Hernandez,noah.hernandez@example.com,390.20
+zABcd,2006,Isabella Lopez,isabella.lopez@example.com,480.60
+EFGhi,2007,LucasMartinez,lucas.martinez@example.com,220.15
+JKLmn,2008,Sophia Johnson,sophia.johnson@example.com,370.45
+OPqRs,2009,Mason Thompson,mason.thompson@example.com,520.90
+TUVwx,2010,Amelia Lee,amelia.leeexample.com,310.00
+yzABC,2011,Logan Smith,logan.smith@example.com,199.95
+DEFGH,2012,Mia Taylor,mia.taylor@example.com,280.00
+IJKLm,2013,,ethan.brown@example.com,180.00
+NOPqr,2014,Charlotte Anderson,charlotte.anderson@example.com,420.30
+STUvw,205,Aiden Martinez,aiden.martinez@example.com,299.50
